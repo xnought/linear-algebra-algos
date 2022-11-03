@@ -10,7 +10,7 @@ function [Q, R] = their_qr(A)
         x = A(i:m, i);
 
         e_i = eye(m - i + 1, 1); % canonical unit vector [1, 0, ..., 0]^T
-        v = x + sign(x) .* norm(x, 2) .* e_i % x +- ||x||e_i
+        v = x + sign(x) .* norm(x, 2) .* e_i; % x +- ||x||e_i
         v = v / sqrt(v' * v); % norm to 1
 
         % House holder reflections
