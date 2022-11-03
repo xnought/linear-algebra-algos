@@ -1,5 +1,3 @@
-% QR DECOMPOSITION
-% running time: O(2n^2(m-n/3)) ~ O(mn^2)
 function [Q, R] = their_qr(A)
     [m, n] = size(A);
     Q = eye(m);
