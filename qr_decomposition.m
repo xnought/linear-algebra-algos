@@ -1,4 +1,4 @@
-function [Q, R] = myqr(A)
+function [Q, R] = qr_decomposition(A)
     [m, n] = size(A);
     Q = eye(m);
 
