@@ -1,4 +1,4 @@
-function [Q, R] = their_qr(A)
+function [Q, R] = myqr(A)
     [m, n] = size(A);
     Q = eye(m);
 
@@ -14,12 +14,12 @@ function [Q, R] = their_qr(A)
         % House holder reflections
         for j = 1:n
             x = A(i:n, j);
-            A(i:n, j) = x - (2 * v * v' * x);
+            A(i:n, j) = x - (2 * v' * x * v);
         end
 
         for j = 1:m
             x = Q(i:m, j);
-            Q(i:m, j) = x - (2 * v * v' * x);
+            Q(i:m, j) = x - (2 * v' * x * v);
         end
 
     end
