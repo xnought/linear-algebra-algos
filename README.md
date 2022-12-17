@@ -1,7 +1,5 @@
-# Matrix Factorizations
+# Numerical Linear Algebra Algorithms
 
-Matrix factorizations/decompositions in random languages I'm feeling
+Using matlab to write some algorithms core to numerical linear algebra.
 
-I'll venture to other languages when I feel like it.
-
-Right now, I'm doing matlab because its required for a class in numerical linear algebra.
+(for educational purposes)
