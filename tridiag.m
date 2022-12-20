@@ -14,7 +14,7 @@ function T = tridiag(A)
 
         e_i = eye(m - i + 1, 1); % canonical unit vector [1, 0, ..., 0]^T
         v = x + sign(x) .* norm(x, 2) .* e_i; % x +- ||x||e_i
-        v = v / sqrt(v' * v); % norm to 1
+        v = v / norm(v, 2); % normalize vector
 
         % House holder reflections over the columns
         for j = 1:n
